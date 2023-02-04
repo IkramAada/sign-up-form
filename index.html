@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>Sign up</title>
+    </header>
+    <body> 
+        <form>
+            <h1>Sign up</h1>
+            <label for="name">Name</label><br>
+                <input type="text" id="name" value="" pattern="[a-zA-z]+" required/><br><br>
+            <label for="email">Email</label><br>
+                <input type="email" name="email" value="" pattern="[A-Za-z0-9]+ \@ mail.com" required/><br><br> <!--Falta validar el email--> 
+            <label for="password">Password</label><br>
+                <input type="password" id="password" value="" maxlength="8" required/><br><br>
+            <label for="passwordConf">Confirm password</label><br>
+                <input type="password" id="passwordConf" value="" maxlength="8" required/><br><br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
