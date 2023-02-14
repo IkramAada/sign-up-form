@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        <title>Sign up</title>
-    </header>
-    <body> 
+<header>
+    <title>Sign up</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" type="text/javascript"></script> 
+</header>
+
+<body>
+    <div id="container">
         <form>
-            <h1>Sign up</h1>
-            <label for="name">Name</label><br>
-                <input type="text" id="name" pattern="[a-zA-z]+" required/><br><br>
-            <label for="email">Email</label><br>
-                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required/><br><br> 
-            <label for="password">Password</label><br>
-                <input type="password" id="password" maxlength="8" required/><br><br>
-            <label for="password-conf">Confirm password</label><br>
-                <input type="password" id="password-conf" maxlength="8" required/><br><br>
-            <input type="submit" value="Submit"/>
+            <h1>Create Account</h1>
+            <div class="input-container">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" autocomplete="off"/><br>
+                <small id="nameMsg"></small><br>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" autocomplete="off"/><br>
+                <small id="emailMsg"></small><br>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" /><br>
+                <small id="passwordMsg"></small><br>
+            </div>
+            <div class="input-container">
+                <label for="password-conf">Confirm password</label><br>
+                <input type="password" id="passwordConf" /><br>
+                <small id="passwordConfMsg"></small><br>
+            </div>
+            <input type="submit" id="submit-bttn" value="submit" onclick="return validateform()"/>
         </form>
-    </body>
+    </div>
+</body>
 </html>

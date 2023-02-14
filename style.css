@@ -1,1 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
+body {
+    font-family: 'poppins';
+    font-size: 13px;
+    color: #aebce1; 
+    background: #252934;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} 
+
+#container{
+    border: 1.5px solid #3e455b;
+    background-color: #2f3744;
+    padding: 2em ;
+    border-radius: 6px;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    width: 93%;
+    background-color: #f6fafd;
+    border: 1.3px solid #a5aeb9;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+input:focus{
+    box-shadow: 0 0 5px #667eea;
+    border: 2px solid #667eea;
+    outline: none;
+}
+
+#submit-bttn {
+    width: 100%;
+    color: white;
+    background-color: #6c63fe;
+    text-transform: uppercase;
+    border: none;
+}
+
+#submit-bttn:hover {
+    background-color: #5e55fa;
+    cursor: pointer;
+}
+
+#container h1 {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 5px;
+  }
+
+.input-container small {
+    color: #DB5A5A;
+}
+
+.valid {
+    background-image: url(images/success-icon.svg), linear-gradient(to right, white, white); 
+    background-repeat: no-repeat;
+    background-position: right 0.5em bottom 6px;
+    border: 2px solid #4ECA64;
+}
+
+.invalid {
+    background-image: url(images/error-icon.svg), linear-gradient(to right, white, white); 
+    background-repeat: no-repeat;
+    background-position: right 0.5em bottom 6px;
+    border: 2px solid #DB5A5A;
+}
+
+.valid:focus {
+    box-shadow: 0 0 5px #4ECA64;
+    border: 2px solid #4ECA64;
+    outline: none;
+}
+
+.invalid:focus {
+    box-shadow: 0 0 5px #DB5A5A;
+    border: 2px solid #DB5A5A;
+    outline: none;
+}
