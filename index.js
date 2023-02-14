@@ -14,7 +14,7 @@ function validateform() {
 
 function validateName(){
     let valid = true;
-    const namePattern=/^[a-zA-Z]+$/;
+    const namePattern=/^[a-zA-Z ]+$/;
     const name = document.getElementById('name');
 
     // Clear classes (valid or invalid) 
